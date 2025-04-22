@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+.anta-regular {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nothing-you-could-do-regular {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h1,h2,h3{
+	font-family: Anta; color: black; text-transform: uppercase
+}
+.banner {
+  width: 100%;
+  min-height: 700px;
+  position: relative
+}
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #131313;
+  opacity: 0.2
+}
+header{
+	width: 100%; height: 100px; left: 0; top: 0; position: sticky; z-index: 100; background-color: white; border-bottom: 2px solid black
+}
+.logo{ 
+	margin-top: -42px
+}
+.menu ul{
+	margin: 0; padding: 0px; list-style: none; display: flex; flex-direction: row
+}
+.menu{
+	padding-top: 30px
+}
+.menu ul li a{
+	padding: 10px 20px; text-decoration: none; text-transform: capitalize; font-size: 30px; font-weight: 500; color: #2D2C2C; display: block
+}
+.menu ul li a:hover{
+	color: white; background-color: black
+}
+/*dropdown*/
+.menu ul li {
+  position: relative
+}
+.menu ul li .drop-down {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  background-color: white;
+  display: none
+}
+.menu .drop-down li {
+  border-bottom: 1px solid #02A7D2
+}
+.menu ul li:hover .drop-down {
+  display: block
+}
+/*caption*/
+.caption{
+	width: 35%; top: 5%; left: 1%; position: absolute; color: #FF0067; z-index: 90; display: flex; flex-direction: column; text-align: left; font-size: 20px; font-weight: 600
+}
+.caption2{
+	width: 40%; top: 87%; left: 53%; position: absolute; color: #FF0067; z-index: 90; text-align: left; font-size: 20px; font-weight: 600
+}
+.caption3{
+	width: 45%; top: 50%; left: 25%; position: absolute; color: #FF0067; z-index: 90; display: flex; flex-direction: column; text-align: left; font-size: 20px; font-weight: 600
+}
+.caption4{
+	width: 40%;  top: 37%; left:30%;position: absolute; color: #FF0067; z-index: 90; font-size: 20px; font-weight: 600; text-align: left
+}
+.caption ul li{
+	font-family: Nothing You Could Do
+}
+.caption2 ul li{
+	font-family: Nothing You Could Do
+}
+.caption3 ul li{
+	font-family: Nothing You Could Do
+}
+.caption4 ul li{
+	font-family: Nothing You Could Do
+}
+.title{
+	text-align: left; color: black; font-size: 16px
+}
+.textinbox{
+	color: black; margin-bottom: 5px
+}
+.infobox{
+	color: black; margin-bottom: 5px; font-weight: 300
+}
+.merch-box{
+	color: black; width: 100%; border: 1px solid black; padding: 10px; margin: 10px; box-shadow: 5px 5px 5px 2px gray; position: relative; overflow: hidden
+}
+.merch-box:hover .iconic{
+	top: 35%
+}
+.cost{
+	font-size: 20px; color: darkred
+}
+.iconic{
+	width: 80%;height: 40px; position: absolute; left: 10%; top: -20%; display: flex;justify-content: space-around; transition: all 0.5s
+}
+.iconic a{
+	background-color: #02A7D2; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none
+}
+.iconic a:hover{
+	background-color: black; color: white
+}
+.liver-box{
+	width: 100%; padding: 20px; border: 2px solid black ;color: white
+}
+.liver-box ul li a:hover{
+	background-color: gray; color: white; width: 100%
+}
+/*fin*/
+/*covers*/
+.covers{
+	width: 35%; top: 5%; left: 4%; position: absolute; background-color: black; opacity: 0.8; z-index: 90
+}
+.covers2{
+	width: 43%; top: 87%; left: 53%; position: absolute; background-color: black; opacity: 0.8; z-index: 90
+}
+.covers3{
+	width: 47%; top: 50%; left: 25%; position: absolute; background-color: black; opacity: 0.8; z-index: 90
+}
+.covers4{
+	width: 40%;  top: 37%; left:30%; position: absolute; background-color: black; opacity: 0.8; z-index: 80
+}
+footer{
+	margin-top: 100px
+}
+footer a{
+	text-decoration: none; color: #666666
+}
+footer a:hover{
+	color: darkred
+}
+.bluebg{
+	background-color: black
+}
+footer ul{
+	margin: 0px; padding: 0; list-style: none;display: flex; flex-direction: column
+}
+footer ul li a{
+	display: block; padding: 12px; color: white
+}
+footer ul li a:hover{
+	color: black; font-weight: 600; background-color: white
+}
+.shadow{
+	width: 100%; border: 1px solid grey; min-height: 200px; box-shadow: 5px 5px 5px gray;padding: 30px
+}
+.form-control{
+	padding: 8px; width: 100%; margin-bottom: 10px
+}
+.box-profile{
+	border: 2px solid #8B0000; width: 100%; padding: 0px; margin: 0px; display: flex; flex-direction: column
+}
+.song-box{
+	width: 100%; padding: 15px; align-items: center; text-align: center;transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.song-box:hover{
+	background: grey; opacity: 0.8; 
+}
+/*fin*/
+/*slide*/
+#slide .owl-dots{ position:absolute; bottom: 10px; left:45%;}
+#slide .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 	
+}
+#slide .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background:white;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+ #slide .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #8F0016; 
+}
+#slide .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slide .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #fff
+}
+
+#slide .owl-nav .owl-next{ position:absolute; right:5%;}
+#slide .owl-nav .owl-prev{ position:absolute; left:5%;}
+#slide .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:#02A7D2;
+      text-decoration: none; }
+/*fin*/
+/*slide1*/
+#slide1 .owl-dots{ position:absolute; bottom: 10px; left:45%;}
+#slide1 .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 	
+}
+#slide1 .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background:white;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+ #slide1 .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #8F0016; 
+}
+#slide1 .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slide1 .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #fff
+}
+
+#slide1 .owl-nav .owl-next{ position:absolute; right:5%;}
+#slide1 .owl-nav .owl-prev{ position:absolute; left:5%;}
+#slide1 .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:#02A7D2;
+      text-decoration: none; }
+/*fin*/
+/*slick-slide*/
+body{
+  background-color: #F5F5FF;
+}
+.wrapper{
+  padding: 70px 0;
+  overflow-x: hidden;
+}
+
+
+.my-slider{
+  padding: 0 70px;
+}
+.slick-initialized .slick-slide{
+  background-color: #FFFFFF;
+  color: #FFF;
+  height: 250px;
+  margin: 0 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center
+}
+
+
+
+.slick-next, .slick-prev{
+  z-index: 5;
+}
+.slick-next{
+  right: 15px;
+}
+.slick-prev{
+  left: 15px;
+}
+.slick-next:before, .slick-prev:before{
+  color: black;
+  font-size: 26px;
+}
+.slick-dots{
+	align-items: center
+}
